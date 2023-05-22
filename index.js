@@ -28,7 +28,7 @@ server.get('/add/:first/to/:second', (req, res, next) => {
 });
 
 server.get('/posts/:postId');
-server.get('/posts/edit', showEditPage);
+server.get('/posts/edit');
 
 server.listen(PORT, () => {
     console.log('The server is up on port', PORT)
