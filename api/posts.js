@@ -69,7 +69,6 @@ postsRouter.delete('/:postId', requireUser, async (req, res, next) => {
 
             res.send({ post: updatedPost });
         } else {
-            // if there was a post, throw UnauthorizedUserError, otherwise throw PostNotFoundError
             next(post ? {
                 name: "UnauthorizedUserError",
                 message: "You cannot delete a post which is not yours"

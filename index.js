@@ -27,7 +27,7 @@ server.get('/add/:first/to/:second', (req, res, next) => {
         }</h1>`);
 });
 
-server.get('/posts/:postId', showSinglePostPage);
+server.get('/posts/:postId');
 server.get('/posts/edit', showEditPage);
 
 server.listen(PORT, () => {
